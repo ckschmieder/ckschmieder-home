@@ -1,16 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Open+Sans:400,400italic|Raleway:400,300,500,700|Roboto+Slab);
+@font-face{font-family: MeetMeInBrooklyn-Regular;src:url(http://www.denisechandler.com/webfonts/2D2841_0_0.woff2)format("woff2");}
+
 body {
-	padding-top: 70px;
+	/*padding-top: 50px;*/
+	font-family: "Raleway", sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 100;
+	margin: 0;
 }
 
 img {
 	max-width: 200px;
 }
 
-.navbar {
-	border-radius: 0;
-	border: 0;
+/** Header Navigation **/
+
+header .navbar {
+	padding: 30px 0;
 }
+
+header .navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+header .navbar-default .navbar-nav a {
+	color: white;
+	padding: 5px 8px;
+}
+
+header .navbar-default .navbar-nav a:hover {
+	color: #EEC856;
+}
+
+header .navbar-default .navbar-nav .active a {
+	font-weight: 700;
+	color: #EEC856;
+	background: transparent;
+	border-bottom: 4px solid #EEC856;
+	text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+	color: #E15D5F;
+	background: transparent;	
+	text-shadow: none;
+}	
+
+/** Navbar Brand **/
+
+header .navbar-brand {
+	background: url(../images/wisdompetlogo.svg); 
+	background-repeat: no-repeat;
+	background-position: 15px 0;
+	height: auto;
+}
+
+header .navbar-brand h1 {
+	color: white;
+	margin: 0;
+	font-size: 1.8em;
+	font-weight: 400;
+	padding-left: 105px;
+	font-family: "Roboto Slab", serif;
+	
+}
+
+/** Footer Navigation **/
 
 footer .navbar-default {
 	background: transparent;
+}
+
+.page {
+	padding: 50px 0;
+}
+
+.page h2 {
+	text-align: center;
+	margin-bottom: 30px;
 }

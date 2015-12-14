@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <title>Chris Schmieder</title>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">   
    <link rel="stylesheet" href="css/style.css">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -12,20 +12,20 @@
 <body>
 
    <header>
-      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
          <div class="container">
             <div class="navbar-header"><!-- .navbar-header -->
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
                  <span class="sr-only">Toggle navigation</span>
                  <span class="icon-bar"></span>
                  <span class="icon-bar"></span>
                  <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="#featured">CKS<span class="subhead"></span></a>             
+               <a class="navbar-brand" href="#featured"><h1>CKS</h1></a>             
             </div><!-- END .navbar-header -->
 
             <!-- Everything you want hidden at 940px or less, place within here -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><!-- .collapse -->
+            <div class="collapse navbar-collapse" id="collapse-1"><!-- .collapse -->
                <ul class="nav navbar-nav navbar-right">
                   <li class="active"><a href="#featured">Home</a></li>
                   <li><a href="#about">About</a></li>
@@ -37,13 +37,22 @@
          </div>         
       </nav>
 
-      <div class="carousel slide" data-ride="carousel" id="featured">
-         <img src="images/carousel-lifestyle.jpg" alt="Lifestyle Photo">
-         <img src="images/carousel-mission.jpg" alt="About">
-         <img src="images/carousel-vaccinations.jpg" alt="Vaccinations">
-         <img src="images/carousel-fish.jpg" alt="Fish">
-         <img src="images/carousel-exoticanimals.jpg" alt="Exotic Animals">
-      </div>
+      <div class="carousel slide" data-ride="carousel" id="featured"><!-- carousel -->
+         <div class="carousel-inner">
+            <div class="item"><img src="images/carousel/carousel-lifestyle.jpg" alt="Lifestyle Photo"></div>
+            <div class="item active"><img src="images/dna/dna-rain-code.jpg" alt="About"></div>
+            <div class="item"><img src="images/carousel/carousel-vaccinations.jpg" alt="Vaccinations"></div>
+            <div class="item"><img src="images/carousel/carousel-fish.jpg" alt="Fish"></div>
+            <div class="item"><img src="images/carousel/carousel-exoticanimals.jpg" alt="Exotic Animals"></div>
+         </div><!-- END carousel-inner -->
+
+         <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+         </a>
+         <a class="right carousel-control" href="#featured" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+         </a>
+      </div><!-- END carousel -->
    </header><!-- END header -->
 
    <div class="main">
